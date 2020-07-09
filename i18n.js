@@ -5,6 +5,8 @@ module.exports = new NextI18Next({
   fallbackLng: 'tr',
   otherLanguages: ['tr', 'en'],
   localeSubpaths: {
+    tr: 'tr',
     en: 'en',
   },
+  strictMode: false,
 });

@@ -1,8 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 
-import { withTranslation } from '../i18n';
+const Error = () => {
+  const { t } = useTranslation(['common']);
+  return <p>{t('error-with-status', { statusCode: '404' })}</p>;
+};
 
-const Error = ({ t }) => <p>{t('error-with-status', { statusCode: '404' })}</p>;
-
-export default withTranslation('common')(Error);
+export default Error;
