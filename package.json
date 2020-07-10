@@ -1,16 +1,14 @@
 {
-  "name": "next-offline-now",
+  "name": "next-now",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "node server.js",
+    "dev": "next dev",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js"
+    "start": "next start"
   },
   "dependencies": {
-    "express": "^4.17.1",
     "next": "^9.4.4",
-    "next-i18next": "^4.5.0",
     "next-offline": "^5.0.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
