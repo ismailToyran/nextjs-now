@@ -1,7 +1,7 @@
 import { defaultLocale } from './config';
 import { isLocale } from './types';
 
-export function getInitialLocale() {
+const getInitialLocale = () => {
   const localSetting = localStorage.getItem('locale');
   if (localSetting && isLocale(localSetting)) {
     return localSetting;
@@ -13,4 +13,6 @@ export function getInitialLocale() {
   }
 
   return defaultLocale;
-}
+};
+
+export default getInitialLocale;
