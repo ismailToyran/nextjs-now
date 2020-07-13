@@ -10,7 +10,7 @@ const Index = () => {
   return (
     <Head>
       <meta name='robots' content='noindex, nofollow' />
-      <title>Offline Next.js with Now 2.0</title>
+      <title>Offline Next.js with Vercel</title>
       <link rel='manifest' href='/manifest.json' />
       <link
         rel='shortcut icon'
