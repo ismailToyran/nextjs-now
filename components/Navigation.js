@@ -1,7 +1,8 @@
 import React from 'react';
-import Link from '../components/Link';
-import useTranslation from '../hooks/useTranslation';
-import LocaleSwitcher from './LocaleSwitcher';
+
+import Link from '@components/Link';
+import LocaleSwitcher from '@components/LocaleSwitcher';
+import useTranslation from '@hooks/useTranslation';
 
 const Navigation = () => {
   const { locale, t } = useTranslation();

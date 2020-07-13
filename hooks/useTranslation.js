@@ -1,7 +1,8 @@
 import { useContext } from 'react';
-import { LocaleContext } from '../context/LocaleContext';
-import strings from '../translations/strings';
-import { defaultLocale } from '../translations/config';
+
+import { LocaleContext } from '@context/LocaleContext';
+import strings from '@translations/strings';
+import { defaultLocale } from '@translations/config';
 
 const useTranslation = () => {
   const { locale } = useContext(LocaleContext);

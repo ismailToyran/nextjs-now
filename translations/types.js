@@ -1,7 +1,5 @@
-import { locales } from './config';
+import { locales } from '@translations/config';
 
 export function isLocale(tested) {
-  console.log(tested);
-  locales.some((locale) => console.log(locale === tested));
   return locales.some((locale) => locale === tested);
 }

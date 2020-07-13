@@ -1,6 +1,7 @@
 import React, { createContext, useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { isLocale } from '../translations/types';
+
+import { isLocale } from '@translations/types';
 
 export const LocaleContext = createContext({
   locale: 'en',

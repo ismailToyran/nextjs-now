@@ -1,5 +1,5 @@
-import { defaultLocale } from './config';
-import { isLocale } from './types';
+import { defaultLocale } from '@translations/config';
+import { isLocale } from '@translations/types';
 
 const getInitialLocale = () => {
   const localSetting = localStorage.getItem('locale');

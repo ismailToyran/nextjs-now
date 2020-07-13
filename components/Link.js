@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import useTranslation from '../hooks/useTranslation';
+import useTranslation from '@hooks/useTranslation';
 
 const CustomLink = ({ href, as, children }) => {
   const { locale } = useTranslation();

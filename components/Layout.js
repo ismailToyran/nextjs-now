@@ -1,7 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
-import useTranslation from '../hooks/useTranslation';
-import Navigation from './Navigation';
+
+import useTranslation from '@hooks/useTranslation';
+import Navigation from '@components/Navigation';
 
 const Layout = ({ titleKey, children }) => {
   const { t } = useTranslation();

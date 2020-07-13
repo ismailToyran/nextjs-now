@@ -1,5 +1,6 @@
 import React from 'react';
-import useTranslation from '../hooks/useTranslation';
+
+import useTranslation from '@hooks/useTranslation';
 
 const Painting = () => {
   const { t } = useTranslation();
