@@ -5,19 +5,19 @@ import LocaleSwitcher from '@components/LocaleSwitcher';
 import useTranslation from '@hooks/useTranslation';
 
 const Navigation = () => {
-  const { locale, t } = useTranslation();
+  const { t } = useTranslation();
   return (
-    <ul className='root'>
+    <ul className="root">
       <li>
         <LocaleSwitcher />
       </li>
       <li>
-        <Link href='/'>
+        <Link href="/">
           <a>{t('painting')}</a>
         </Link>
       </li>
       <li>
-        <Link href='/artist'>
+        <Link href="/artist">
           <a>{t('artist')}</a>
         </Link>
       </li>

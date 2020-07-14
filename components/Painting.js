@@ -7,7 +7,7 @@ const Painting = () => {
   return (
     <div>
       <h1>{t('notAPipe')}</h1>
-      <img src='/img/not_a_pipe.jpg' alt={t('notAPipe')} />
+      <img src="/img/not_a_pipe.jpg" alt={t('notAPipe')} />
     </div>
   );
 };

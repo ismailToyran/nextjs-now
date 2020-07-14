@@ -9,7 +9,7 @@ const LocaleSwitcher = () => {
   const { locale } = React.useContext(LocaleContext);
 
   const handleLocaleChange = useCallback(
-    (e) => {
+    e => {
       const regex = new RegExp(`^/(${locales.join('|')})`);
       router.push(
         router.pathname,
@@ -21,7 +21,7 @@ const LocaleSwitcher = () => {
 
   return (
     <select value={locale} onChange={handleLocaleChange}>
-      {locales.map((locale) => (
+      {locales.map(locale => (
         <option key={locale} value={locale}>
           {languageNames[locale]}
         </option>

@@ -24,14 +24,14 @@ export const asset = (src = '', size) =>
 //   }
 // `;
 
-export const slugify = (text) => {
+export const slugify = text => {
   const trMap = {
     çÇ: 'c',
     ğĞ: 'g',
     şŞ: 's',
     üÜ: 'u',
     ıİ: 'i',
-    öÖ: 'o',
+    öÖ: 'o'
   };
   return Object.keys(trMap)
     .reduce(
@@ -45,7 +45,7 @@ export const slugify = (text) => {
     .toLowerCase();
 };
 
-export const getInitials = (name) => {
+export const getInitials = name => {
   let initials = name.match(/\b\w/g) || [];
   initials = ((initials.shift() || '') + (initials.pop() || '')).toUpperCase();
   return initials;

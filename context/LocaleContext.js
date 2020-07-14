@@ -5,7 +5,7 @@ import { isLocale } from '@translations/types';
 
 export const LocaleContext = createContext({
   locale: 'en',
-  setLocale: () => null,
+  setLocale: () => null
 });
 
 export const LocaleProvider = ({ lang, children }) => {

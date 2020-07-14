@@ -6,7 +6,7 @@ import withLocale from '@hocs/withLocale';
 
 const ArtistPage = () => {
   return (
-    <Layout titleKey='about'>
+    <Layout titleKey="about">
       <Artist />
     </Layout>
   );

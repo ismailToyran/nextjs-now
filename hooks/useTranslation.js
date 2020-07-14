@@ -7,7 +7,7 @@ import { defaultLocale } from '@translations/config';
 const useTranslation = () => {
   const { locale } = useContext(LocaleContext);
 
-  const t = (key) => {
+  const t = key => {
     if (!strings[locale][key]) {
       console.warn(`Translation '${key}' for locale '${locale}' not found.`);
     }

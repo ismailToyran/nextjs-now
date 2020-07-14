@@ -5,9 +5,8 @@ import Painting from '@components/Painting';
 import withLocale from '@hocs/withLocale';
 
 const IndexPage = () => {
-  console.log(process.env.GOOGLE_MAP_EMBED);
   return (
-    <Layout titleKey='notAPipe'>
+    <Layout titleKey="notAPipe">
       <Painting />
     </Layout>
   );

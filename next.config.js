@@ -11,10 +11,10 @@ const nextConfig = {
     PORT: process.env.PORT,
     RECAPTCHA_S2_KEY: process.env.RECAPTCHA_S2_KEY,
     GOOGLE_MAP_EMBED: process.env.GOOGLE_MAP_EMBED,
-    GTM_ID: process.env.GTM_ID,
+    GTM_ID: process.env.GTM_ID
   },
   target: 'serverless',
-  transformManifest: (manifest) => ['/'].concat(manifest), // add the homepage to the cache
+  transformManifest: manifest => ['/'].concat(manifest), // add the homepage to the cache
   // Trying to set NODE_ENV=production when running yarn dev causes a build-time error so we
   // turn on the SW in dev mode so that we can actually test it
   generateInDevMode: false,
@@ -29,15 +29,15 @@ const nextConfig = {
           networkTimeoutSeconds: 15,
           expiration: {
             maxEntries: 150,
-            maxAgeSeconds: 30 * 24 * 60 * 60, // 1 month
+            maxAgeSeconds: 30 * 24 * 60 * 60 // 1 month
           },
           cacheableResponse: {
-            statuses: [0, 200],
-          },
-        },
-      },
-    ],
-  },
+            statuses: [0, 200]
+          }
+        }
+      }
+    ]
+  }
 };
 
 module.exports = withOffline(nextConfig);

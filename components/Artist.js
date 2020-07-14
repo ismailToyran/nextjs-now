@@ -7,7 +7,7 @@ const Artist = () => {
   return (
     <div>
       <h1>René Magritte</h1>
-      <img src='/img/magritte.jpg' alt='Rene Magritte' />
+      <img src="/img/magritte.jpg" alt="Rene Magritte" />
       <p>{t('bio')}</p>
       <a href={`http://${locale}.wikipedia.org/wiki/René_Magritte`}>
         {t('readMore')}
