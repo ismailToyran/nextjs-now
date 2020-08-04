@@ -5,6 +5,8 @@ import Painting from '@components/Painting';
 import withLocale from '@hocs/withLocale';
 
 const IndexPage = () => {
+  console.log('domain url:', process.env.DOMAIN_URL);
+  console.log('public domain url:', process.env.NEXT_PUBLIC_DOMAIN_URL);
   return (
     <Layout titleKey="notAPipe">
       <Painting />
